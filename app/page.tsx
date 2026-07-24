@@ -21,7 +21,7 @@ export default function HomePage() {
       <BentoCollections />
       <CompareTable />
       <CtaBand
-        id="register"
+        id="register-mid"
         title="Register for The Enclave Milton Townhomes — floor plans & pricing"
       />
       <GeoLocationHub />

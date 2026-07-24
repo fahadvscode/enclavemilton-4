@@ -1,5 +1,5 @@
 import LeadForm from "./LeadForm";
-import { NON_REPRESENTATION_DISCLAIMER } from "@/lib/site";
+import { IMAGE_DISCLAIMER, NON_REPRESENTATION_DISCLAIMER } from "@/lib/site";
 import styles from "./CtaBand.module.css";
 
 type CtaBandProps = {
@@ -21,6 +21,7 @@ export default function CtaBand({
             traditional townhomes by Sundial Homes from $599,990 with $0 monthly maintenance.
           </p>
           <p className={styles.disclaimer}>{NON_REPRESENTATION_DISCLAIMER}</p>
+          <p className={styles.disclaimer}>{IMAGE_DISCLAIMER}</p>
         </div>
         <div className={styles.form}>
           <LeadForm idPrefix={id} />

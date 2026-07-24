@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  min-height: min(92vh, 860px);
+  min-height: min(92vh, 900px);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   color: #fff;
   overflow: hidden;
 }
@@ -27,16 +27,23 @@
 .content {
   position: relative;
   z-index: 1;
-  padding: 7rem 0 4.5rem;
-  max-width: 42rem;
-  margin-right: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 6.5rem 0 3.5rem;
   animation: rise-in 0.9s var(--ease-out) both;
+}
+
+.copy {
+  max-width: 36rem;
 }
 
 .brand {
   margin: 0 0 0.85rem;
   font-family: var(--font-heading);
-  font-size: clamp(2.75rem, 8vw, 5.5rem);
+  font-size: clamp(2.4rem, 7vw, 4.75rem);
   font-weight: 750;
   line-height: 0.92;
   letter-spacing: -0.04em;
@@ -47,7 +54,7 @@
 
 .headline {
   margin: 0 0 1rem;
-  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
   font-weight: 550;
   letter-spacing: -0.01em;
   color: rgba(255, 255, 255, 0.95);
@@ -68,14 +75,31 @@
   gap: 0.75rem;
 }
 
-@media (max-width: 640px) {
+.card {
+  padding: 1.35rem 1.25rem 1.2rem;
+  background: rgba(251, 252, 250, 0.97);
+  color: var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.cardTitle {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+@media (max-width: 960px) {
   .hero {
-    min-height: 84vh;
     align-items: flex-end;
+    min-height: auto;
   }
 
   .content {
-    padding: 6rem 0 3.25rem;
+    grid-template-columns: 1fr;
+    padding: 5.5rem 0 2.5rem;
+    gap: 1.5rem;
   }
 
   .actions {

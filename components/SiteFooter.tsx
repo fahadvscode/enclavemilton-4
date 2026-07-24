@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NON_REPRESENTATION_DISCLAIMER } from "@/lib/site";
+import { IMAGE_DISCLAIMER, NON_REPRESENTATION_DISCLAIMER } from "@/lib/site";
 import styles from "./SiteFooter.module.css";
 
 export default function SiteFooter() {
@@ -18,6 +18,7 @@ export default function SiteFooter() {
           <a href="#register">Register</a>
         </nav>
         <p className={styles.disclaimer}>{NON_REPRESENTATION_DISCLAIMER}</p>
+        <p className={styles.disclaimer}>{IMAGE_DISCLAIMER}</p>
       </div>
     </footer>
   );

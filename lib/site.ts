@@ -25,5 +25,9 @@ export const DISTANCE_DISCLAIMER =
 export const NON_REPRESENTATION_DISCLAIMER =
   "This is an independent marketing website. It is not the builder's official sales office and is not affiliated with or endorsed by Sundial Homes. Prices, sizes, features, incentives, and availability are set by the builder and may change without notice. E.&O.E.";
 
+/** Lifestyle / area photos on this site. */
+export const IMAGE_DISCLAIMER =
+  "Some lifestyle and area images on this website are AI-generated for illustrative purposes only. They are not official builder photography, do not depict actual Enclave Milton homes or interiors, and should not be relied on as a representation of the finished community.";
+
 export const FORM_DISCLAIMER =
   "By registering, you consent to be contacted about The Enclave Milton. This site is not Sundial Homes' official sales office.";
