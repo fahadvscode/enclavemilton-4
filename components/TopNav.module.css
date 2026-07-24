@@ -1,0 +1,92 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(14px);
+  background: rgba(243, 247, 244, 0.82);
+  border-bottom: 1px solid rgba(200, 213, 204, 0.7);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.25rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.logoImg {
+  height: 40px;
+  width: auto;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 750;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.logoText small {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: var(--moss);
+}
+
+.cta {
+  padding: 0.55rem 0.95rem;
+  background: var(--moss);
+  color: #fff !important;
+  border-radius: var(--radius);
+}
+
+.cta:hover {
+  background: var(--moss-deep);
+  color: #fff !important;
+}
+
+@media (max-width: 720px) {
+  .logoText {
+    display: none;
+  }
+
+  .nav {
+    gap: 0.85rem;
+  }
+
+  .nav a:not(.cta) {
+    display: none;
+  }
+}

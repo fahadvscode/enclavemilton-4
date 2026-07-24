@@ -1,0 +1,59 @@
+.bento {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 0.9fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.tile {
+  padding: 1.6rem 1.35rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-height: 100%;
+  transition: transform 0.25s var(--ease-out), border-color 0.25s;
+}
+
+.tile:hover {
+  transform: translateY(-3px);
+  border-color: var(--leaf);
+}
+
+.tileLarge {
+  background:
+    linear-gradient(165deg, rgba(47, 90, 66, 0.08), transparent 55%),
+    rgba(255, 255, 255, 0.85);
+}
+
+.tag {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
+.desc {
+  color: var(--muted);
+  flex: 1;
+}
+
+.tile a:not(.btn) {
+  font-weight: 650;
+  text-decoration: none;
+  color: var(--moss-deep);
+  margin-top: 0.5rem;
+}
+
+.tile a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+  .bento {
+    grid-template-columns: 1fr;
+  }
+}

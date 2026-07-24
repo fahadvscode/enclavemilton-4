@@ -1,0 +1,29 @@
+export const SITE_DOMAIN = "theenclavemilton.homes";
+export const SITE_URL = `https://www.${SITE_DOMAIN}`;
+/** Supabase `source` column — identifies this Site D variant. */
+export const SITE_SOURCE = SITE_DOMAIN;
+/** @deprecated alias kept so any leftover Site C imports still resolve */
+export const SITE_C_SOURCE = SITE_SOURCE;
+export const SITE_NAME = "The Enclave Milton";
+export const SITE_NAME_LONG = "The Enclave Milton Townhomes";
+export const BUILDER_NAME = "Sundial Homes";
+export const BUILD_DATE = process.env.BUILD_DATE ?? new Date().toISOString().split("T")[0];
+
+export const DEVELOPMENT_GEO = {
+  latitude: 43.5085,
+  longitude: -79.8628,
+} as const;
+
+export const GEO_REFERENCE_LABEL =
+  "Britannia Road at James Snow Parkway, The Enclave Milton (between James Snow Parkway & Fourth Line)";
+
+/** Shown beside distance tables and school lists. */
+export const DISTANCE_DISCLAIMER =
+  "Distances and drive times are approximate and may vary with traffic conditions. School assignment is address-based — verify with HDSB and HCDSB for your lot.";
+
+/** Shown in footer and beside registration forms — no agent/brokerage identity. */
+export const NON_REPRESENTATION_DISCLAIMER =
+  "This is an independent marketing website. It is not the builder's official sales office and is not affiliated with or endorsed by Sundial Homes. Prices, sizes, features, incentives, and availability are set by the builder and may change without notice. E.&O.E.";
+
+export const FORM_DISCLAIMER =
+  "By registering, you consent to be contacted about The Enclave Milton. This site is not Sundial Homes' official sales office.";

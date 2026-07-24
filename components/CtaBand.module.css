@@ -1,0 +1,43 @@
+.band {
+  padding: 4rem 0;
+  background:
+    linear-gradient(135deg, rgba(30, 61, 44, 0.95), rgba(47, 90, 66, 0.9)),
+    var(--moss-deep);
+  color: #fff;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.band h2 {
+  color: #fff;
+}
+
+.band p {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.disclaimer {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  opacity: 0.75;
+}
+
+.form {
+  padding: 1.35rem;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 860px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
