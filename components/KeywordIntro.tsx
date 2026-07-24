@@ -23,8 +23,7 @@ export default function KeywordIntro() {
             </p>
             <p className={styles.body}>
               Two collections share one master plan: Village back-to-back towns and Park traditional
-              two- and three-storey layouts — fifteen models from about 953 to 2,843 sq ft, marketed
-              from $599,990 with $0 monthly maintenance and 2027 occupancy.
+              two- and three-storey layouts. Register now to receive exclusive updates and floor plans.
             </p>
           </div>
           <aside className={styles.aside} aria-label="Quick facts about The Enclave Milton">
@@ -39,20 +38,8 @@ export default function KeywordIntro() {
                 <dd>Freehold townhomes</dd>
               </div>
               <div>
-                <dt>Starting from</dt>
-                <dd>$599,990</dd>
-              </div>
-              <div>
-                <dt>Maintenance</dt>
-                <dd>$0 monthly</dd>
-              </div>
-              <div>
                 <dt>Location</dt>
                 <dd>Britannia Rd, Milton ON</dd>
-              </div>
-              <div>
-                <dt>Occupancy</dt>
-                <dd>2027</dd>
               </div>
             </dl>
           </aside>

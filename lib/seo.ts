@@ -60,6 +60,6 @@ export function buildMetadata({
 }
 
 export const defaultDescription =
-  "The Enclave Milton townhomes by Sundial Homes — freehold homes from $599,990 with $0 monthly maintenance on Britannia Road between James Snow Parkway and Fourth Line. Explore The Enclave Milton Sundial Homes Village & Park collections. Now selling for 2027 occupancy.";
+  "The Enclave Milton townhomes by Sundial Homes — freehold homes on Britannia Road between James Snow Parkway and Fourth Line. Explore The Enclave Milton Sundial Homes Village & Park collections. Register for exclusive updates.";
 
-export const homePageTitle = "The Enclave · The Enclave Milton · Freehold Townhomes from $599,990";
+export const homePageTitle = "The Enclave · The Enclave Milton · Freehold Townhomes";

@@ -11,33 +11,33 @@ export default function BentoCollections() {
       <div className="container">
         <h2 id="collections-heading">Village &amp; Park collections</h2>
         <p className="lead">
-          Both collections at The Enclave Milton are freehold with $0 monthly maintenance. Village is
+          Both collections at The Enclave Milton are freehold. Village is
           back-to-back; Park is traditional two- and three-storey Sundial Homes townhomes.
         </p>
         <div className={styles.bento}>
           <article className={styles.tile}>
-            <span className={styles.tag}>5 models</span>
+            <span className={styles.tag}>Village Collection</span>
             <h3>{village.name}</h3>
             <p>{village.type}</p>
             <p className={styles.desc}>
-              Compact back-to-back freehold townhomes from about 953 to 1,732 sq ft — ideal for
-              first-time buyers and investors without condo fees.
+              Compact back-to-back freehold townhomes — ideal for
+              first-time buyers and investors.
             </p>
             <Link href="/floor-plans#village">Explore Village Collection</Link>
           </article>
           <article className={styles.tile}>
-            <span className={styles.tag}>10 models</span>
+            <span className={styles.tag}>Park Collection</span>
             <h3>{park.name}</h3>
             <p>{park.type}</p>
             <p className={styles.desc}>
-              Traditional two- and three-storey townhomes from about 1,240 to 2,843 sq ft — family-scale
+              Traditional two- and three-storey townhomes — family-scale
               layouts including end and corner units.
             </p>
             <Link href="/floor-plans#park">Explore Park Collection</Link>
           </article>
           <article className={`${styles.tile} ${styles.tileWide}`}>
             <div>
-              <h3>All 15 The Enclave floor plans</h3>
+              <h3>The Enclave floor plans</h3>
               <p>Compare every model, size, and collection in one place.</p>
             </div>
             <Link href="/floor-plans" className="btn btn--outline">

@@ -55,9 +55,6 @@ Project: The Enclave Milton (also searched as The Enclave, The Enclave Milton To
 Builder: Sundial Homes
 Location: Britannia Road, between James Snow Parkway & Fourth Line, Milton, Ontario, Canada
 Property type: Freehold townhomes — Village Collection (back-to-back) + Park Collection (traditional 2 & 3 storey)
-Price from: $599,990 CAD
-Models: 15 floor plans across 2 collections
-Monthly maintenance: $0 (freehold)
 Occupancy: 2027
 Status: Now selling
 Registration: ${SITE_URL}
@@ -73,8 +70,8 @@ const modelUrls = models
 const llmsFull = `${llms}
 
 ## Collections at The Enclave Milton Townhomes
-- Village Collection: 5 back-to-back freehold townhomes (953–1,732 sq ft approx.)
-- Park Collection: 10 traditional 2 & 3 storey freehold townhomes (1,240–2,843 sq ft approx.)
+- Village Collection: back-to-back freehold townhomes
+- Park Collection: traditional 2 & 3 storey freehold townhomes
 
 ## All The Enclave Milton models
 ${modelUrls}

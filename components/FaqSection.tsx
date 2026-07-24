@@ -10,7 +10,7 @@ export default function FaqSection() {
         </h2>
         <p className="lead">
           Direct answers for buyers researching The Enclave Milton, The Enclave Milton Townhomes,
-          and The Enclave Milton Sundial Homes — pricing, freehold ownership, and registration in
+          and The Enclave Milton Sundial Homes — details, freehold ownership, and registration in
           Milton, Ontario.
         </p>
         <div className={styles.list}>

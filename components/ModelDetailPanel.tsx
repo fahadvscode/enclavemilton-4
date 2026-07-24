@@ -66,7 +66,7 @@ export default function ModelDetailPanel({ model, collection }: ModelDetailPanel
           </p>
         </div>
         <div id={`register-${model.slug}`} className={styles.form}>
-          <h2>Get {model.model} floor plan &amp; pricing</h2>
+          <h2>Get {model.model} floor plan &amp; details</h2>
           <LeadForm defaultModel={model.model} idPrefix={model.slug} />
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: `${SITE_NAME} Townhomes`,
     short_name: "The Enclave",
     description:
-      "The Enclave Milton Townhomes by Sundial Homes — freehold from $599,990.",
+      "The Enclave Milton Townhomes by Sundial Homes — freehold townhomes.",
     start_url: "/",
     display: "standalone",
     background_color: "#f6f2ea",

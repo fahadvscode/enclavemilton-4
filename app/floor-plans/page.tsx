@@ -9,9 +9,9 @@ import { breadcrumbSchema, floorPlansListSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildMetadata({
   path: "/floor-plans",
-  pageTitle: "The Enclave Milton Townhomes Floor Plans — 15 Models",
+  pageTitle: "The Enclave Milton Townhomes Floor Plans",
   description:
-    "Browse all 15 The Enclave Milton Townhomes floor plans by Sundial Homes — Village back-to-back and Park traditional freehold towns from $599,990 with $0 monthly maintenance in Milton, Ontario.",
+    "Browse The Enclave Milton Townhomes floor plans by Sundial Homes — Village back-to-back and Park traditional freehold towns in Milton, Ontario.",
 });
 
 export default function FloorPlansPage() {
@@ -24,11 +24,11 @@ export default function FloorPlansPage() {
       <div className="section">
         <div className="container">
           <h1>
-            The Enclave Milton Townhomes floor plans — all 15 Sundial Homes models
+            The Enclave Milton Townhomes floor plans — Sundial Homes models
           </h1>
           <p className="lead">
-            Every The Enclave Milton layout by Sundial Homes on Britannia Road — five Village
-            back-to-back models and ten Park traditional two- and three-storey towns. Select a model
+            Every The Enclave Milton layout by Sundial Homes on Britannia Road — Village
+            back-to-back models and Park traditional two- and three-storey towns. Select a model
             or register for the full package.{" "}
             <Link href="/schools-and-area">Schools, commute &amp; amenities guide</Link>.
           </p>

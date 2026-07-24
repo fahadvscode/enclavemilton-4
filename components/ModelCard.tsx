@@ -20,13 +20,12 @@ export default function ModelCard({ model, collection }: ModelCardProps) {
         </h3>
         <p className={styles.meta}>{formatModelType(model, collection.id)}</p>
         <p className={styles.sqft}>{formatSqft(model)}</p>
-        <p className={styles.price}>From {collection.id === "village" ? "$599,990" : "registration"}</p>
         <div className={styles.actions}>
           <Link href={`/floor-plans/${model.slug}`} className="btn btn--outline">
             View layout
           </Link>
           <a href={`#register-${model.slug}`} className="btn btn--primary">
-            Get pricing
+            Get details
           </a>
         </div>
       </div>

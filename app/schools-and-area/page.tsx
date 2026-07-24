@@ -42,12 +42,12 @@ export default function SchoolsAndAreaPage() {
             {communityLocation.address} in {communityLocation.area} — minutes from Highway 401,
             served by Halton District School Board and Halton Catholic District School Board, with
             Toronto Premium Outlets, Mattamy National Cycling Centre, and Conservation Halton parks
-            within a short drive. Register below for all 15 Sundial floor plans from $599,990.
+            within a short drive. Register below for Sundial floor plans and details.
           </p>
           <p>
-            <Link href="/floor-plans">View all 15 floor plans</Link>
+            <Link href="/floor-plans">View floor plans</Link>
             {" · "}
-            <a href="#register-area">Register for pricing</a>
+            <a href="#register-area">Register for details</a>
           </p>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function SchoolsAndAreaPage() {
       <AreaCommuteSection />
       <AreaAmenitiesSection />
       <AreaFaqSection />
-      <CtaBand id="register-area" title="Register for The Enclave Milton floor plans & pricing" />
+      <CtaBand id="register-area" title="Register for The Enclave Milton floor plans & details" />
     </>
   );
 }

@@ -46,7 +46,7 @@ export default function MobileStickyCta() {
           aria-expanded={open}
           aria-controls="mobile-register-sheet"
         >
-          Get The Enclave Milton pricing
+          Get The Enclave Milton details
         </button>
       </div>
 

@@ -80,6 +80,6 @@ export async function POST(request: Request) {
   return NextResponse.json({
     ok: true,
     message:
-      "Registration received. Floor plan PDF and pricing will be sent to your email.",
+      "Registration received. Floor plan PDF and details will be sent to your email.",
   });
 }

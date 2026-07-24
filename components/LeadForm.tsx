@@ -69,7 +69,7 @@ export default function LeadForm({
       }
       setStatus("success");
       setMessage(
-        "Thank you — check your inbox (and spam folder) for floor plans and pricing. A representative will follow up shortly."
+        "Thank you — check your inbox (and spam folder) for floor plans and details. A representative will follow up shortly."
       );
     } catch {
       setStatus("error");
@@ -156,7 +156,7 @@ export default function LeadForm({
         </select>
       </div>
       <button type="submit" className="btn btn--primary" disabled={status === "loading"}>
-        {status === "loading" ? "Sending…" : "Get floor plans & pricing"}
+        {status === "loading" ? "Sending…" : "Get floor plans & details"}
       </button>
       <p className={styles.disclaimer}>{FORM_DISCLAIMER}</p>
       {status === "error" && (

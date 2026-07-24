@@ -10,7 +10,7 @@ type CtaBandProps = {
 
 export default function CtaBand({
   id = "register-mid",
-  title = "Register for The Enclave Milton Townhomes floor plans & pricing",
+  title = "Register for The Enclave Milton Townhomes",
   variant = "dark",
 }: CtaBandProps) {
   return (
@@ -23,8 +23,8 @@ export default function CtaBand({
         <div>
           <h2 id={`${id}-title`}>{title}</h2>
           <p>
-            Register once for all 15 The Enclave Milton layouts — Village back-to-back and Park
-            traditional townhomes by Sundial Homes from $599,990 with $0 monthly maintenance.
+            Register for exclusive updates on The Enclave Milton layouts — Village back-to-back and Park
+            traditional townhomes by Sundial Homes.
           </p>
           <p className={styles.disclaimer}>{NON_REPRESENTATION_DISCLAIMER}</p>
           <p className={styles.disclaimer}>{IMAGE_DISCLAIMER}</p>

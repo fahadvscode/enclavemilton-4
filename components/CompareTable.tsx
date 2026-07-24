@@ -1,16 +1,13 @@
 import styles from "./CompareTable.module.css";
 
 const ROWS = [
-  { label: "Sq ft range", village: "953 – 1,732", park: "1,240 – 2,843" },
   { label: "Storeys", village: "2 (back-to-back)", park: "2 & 3 storey" },
   { label: "Layout type", village: "Back-to-back freehold", park: "Traditional townhome" },
-  { label: "Model count", village: "5", park: "10" },
   {
     label: "Ideal buyer",
     village: "First-time, investor, efficient footprint",
     park: "Growing & multigenerational families",
   },
-  { label: "Monthly maintenance", village: "$0", park: "$0" },
 ];
 
 export default function CompareTable() {
@@ -21,7 +18,7 @@ export default function CompareTable() {
           Village vs Park at The Enclave Milton — which collection fits you?
         </h2>
         <p className="lead">
-          Both The Enclave Milton Townhomes collections are freehold with no monthly maintenance; the
+          Both The Enclave Milton Townhomes collections are freehold; the
           difference is layout style and square footage.
         </p>
         <div className={styles.wrap}>
