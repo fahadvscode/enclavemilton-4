@@ -15,6 +15,16 @@
   min-height: 4.25rem;
 }
 
+@media (max-width: 640px) {
+  .inner {
+    min-height: 3.5rem;
+  }
+
+  .logoImg {
+    height: 34px;
+  }
+}
+
 .logo {
   display: inline-flex;
   align-items: center;

@@ -18,6 +18,7 @@ export default function HeroBlock() {
         />
         <div className={styles.overlay} />
       </div>
+
       <div className={`container ${styles.content}`}>
         <div className={styles.copy}>
           <p className={styles.brand} aria-label="The Enclave">
@@ -27,23 +28,23 @@ export default function HeroBlock() {
             The Enclave Milton Townhomes by Sundial Homes
           </h1>
           <p className={styles.support}>
-            Freehold homes from $599,990 on Britannia Road in southeast Milton — $0 monthly
-            maintenance, 15 layouts, 2027 occupancy.
+            Freehold from $599,990 · $0 monthly maintenance · 15 layouts · 2027 occupancy
           </p>
           <div className={styles.actions}>
-            <a href="#register" className="btn btn--primary">
-              Get floor plans &amp; pricing
-            </a>
-            <Link href="/floor-plans" className="btn btn--ghost">
-              View all 15 models
+            <Link href="/floor-plans" className="btn btn--ghost btn--sm">
+              View floor plans
+            </Link>
+            <Link href="/schools-and-area" className={styles.textLink}>
+              Schools &amp; area
             </Link>
           </div>
         </div>
+
         <aside id="register" className={styles.card} aria-labelledby="hero-form-title">
           <h2 id="hero-form-title" className={styles.cardTitle}>
-            Register for The Enclave Milton floor plans &amp; pricing
+            Get floor plans &amp; pricing
           </h2>
-          <LeadForm idPrefix="hero" />
+          <LeadForm idPrefix="hero" compact />
         </aside>
       </div>
     </section>

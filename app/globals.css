@@ -168,6 +168,11 @@ img {
     transform 0.2s var(--ease-out), border-color 0.25s;
 }
 
+.btn--sm {
+  padding: 0.65rem 1.05rem;
+  font-size: 0.85rem;
+}
+
 .btn:hover {
   transform: translateY(-1px);
 }
