@@ -1,7 +1,6 @@
 import JsonLd from "@/components/JsonLd";
 import HeroBlock from "@/components/HeroBlock";
 import KeywordIntro from "@/components/KeywordIntro";
-import FactsStrip from "@/components/FactsStrip";
 import WhySection from "@/components/WhySection";
 import BentoCollections from "@/components/BentoCollections";
 import CompareTable from "@/components/CompareTable";
@@ -16,19 +15,19 @@ export default function HomePage() {
       <JsonLd data={homepageGraph()} />
       <HeroBlock />
       <KeywordIntro />
-      <FactsStrip />
       <WhySection />
       <BentoCollections />
       <CompareTable />
       <CtaBand
         id="register-mid"
-        title="Register for The Enclave Milton Townhomes — floor plans & pricing"
+        title="Register for The Enclave Milton Townhomes"
       />
       <GeoLocationHub />
       <FaqSection />
       <CtaBand
         id="register-footer"
-        title="Get The Enclave Milton Sundial Homes floor plans for all 15 models"
+        title="Floor plans & pricing for all 15 models"
+        variant="light"
       />
     </>
   );

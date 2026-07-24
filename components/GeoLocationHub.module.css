@@ -1,9 +1,9 @@
 .eyebrow {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--moss);
+  color: var(--accent);
   margin: 0 0 0.5rem;
 }
 

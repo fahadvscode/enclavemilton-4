@@ -1,8 +1,10 @@
 .wrap {
   margin-top: 1.5rem;
   overflow-x: auto;
+  border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--paper);
+  box-shadow: var(--shadow-sm);
 }
 
 .table {
@@ -13,23 +15,26 @@
 
 .table th,
 .table td {
-  padding: 0.95rem 1rem;
+  padding: 0.9rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--line);
   vertical-align: top;
+  font-size: 0.95rem;
 }
 
 .table thead th {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 700;
-  background: var(--moss-deep);
-  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: var(--sand-deep);
+  color: var(--ink);
   border-bottom: none;
 }
 
 .table tbody th {
-  font-weight: 650;
+  font-weight: 600;
   color: var(--ink);
   width: 28%;
 }
@@ -41,5 +46,5 @@
 
 .table tbody tr:hover td,
 .table tbody tr:hover th {
-  background: rgba(47, 90, 66, 0.05);
+  background: var(--accent-soft);
 }

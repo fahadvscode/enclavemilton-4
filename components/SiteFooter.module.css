@@ -1,22 +1,20 @@
 .footer {
   padding: 3rem 0 5rem;
-  background: var(--ink);
+  background: var(--navy-deep);
   color: rgba(255, 255, 255, 0.82);
 }
 
 .brand {
   margin: 0 0 0.35rem;
   font-family: var(--font-heading);
-  font-size: 1.45rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.5rem;
   color: #fff;
 }
 
 .sub {
   margin: 0 0 1.25rem;
   font-size: 0.85rem;
-  color: var(--leaf);
+  color: #d4a574;
 }
 
 .links {
@@ -29,7 +27,7 @@
 .links a {
   color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.92rem;
 }
 
@@ -43,7 +41,7 @@
   max-width: 52rem;
   font-size: 0.78rem;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .disclaimer:last-child {

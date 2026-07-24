@@ -21,7 +21,7 @@ const POINTS = [
 
 export default function WhySection() {
   return (
-    <section className="section" aria-labelledby="why-heading">
+    <section className={`section ${styles.whySection}`} aria-labelledby="why-heading">
       <div className="container">
         <h2 id="why-heading">Why buyers choose The Enclave Milton Townhomes</h2>
         <p className="lead">
@@ -32,10 +32,8 @@ export default function WhySection() {
           {POINTS.map((p, i) => (
             <li key={p.title} style={{ animationDelay: `${0.05 * i}s` }}>
               <span className={styles.index}>{String(i + 1).padStart(2, "0")}</span>
-              <div>
-                <h3>{p.title}</h3>
-                <p>{p.body}</p>
-              </div>
+              <h3>{p.title}</h3>
+              <p>{p.body}</p>
             </li>
           ))}
         </ul>

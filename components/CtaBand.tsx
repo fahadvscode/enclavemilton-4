@@ -5,14 +5,20 @@ import styles from "./CtaBand.module.css";
 type CtaBandProps = {
   id?: string;
   title?: string;
+  variant?: "dark" | "light";
 };
 
 export default function CtaBand({
   id = "register-mid",
   title = "Register for The Enclave Milton Townhomes floor plans & pricing",
+  variant = "dark",
 }: CtaBandProps) {
   return (
-    <section className={styles.band} id={id} aria-labelledby={`${id}-title`}>
+    <section
+      className={`${styles.band} ${variant === "light" ? styles.bandLight : ""}`}
+      id={id}
+      aria-labelledby={`${id}-title`}
+    >
       <div className={`container ${styles.inner}`}>
         <div>
           <h2 id={`${id}-title`}>{title}</h2>
@@ -24,7 +30,7 @@ export default function CtaBand({
           <p className={styles.disclaimer}>{IMAGE_DISCLAIMER}</p>
         </div>
         <div className={styles.form}>
-          <LeadForm idPrefix={id} />
+          <LeadForm idPrefix={id} compact={variant === "dark"} />
         </div>
       </div>
     </section>

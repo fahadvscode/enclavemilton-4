@@ -9,8 +9,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "The Enclave Milton Townhomes by Sundial Homes — freehold from $599,990.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f3f7f4",
-    theme_color: "#1e3d2c",
+    background_color: "#f6f2ea",
+    theme_color: "#1a2330",
     lang: "en-CA",
     icons: [
       {

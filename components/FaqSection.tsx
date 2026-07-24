@@ -3,7 +3,7 @@ import styles from "./FaqSection.module.css";
 
 export default function FaqSection() {
   return (
-    <section className="section" id="faq" aria-labelledby="faq-heading">
+    <section className="section" id="faq" aria-labelledby="faq-heading" style={{ background: "var(--sand)" }}>
       <div className="container">
         <h2 id="faq-heading">
           FAQ — The Enclave, The Enclave Milton Townhomes &amp; Sundial Homes
