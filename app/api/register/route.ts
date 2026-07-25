@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { REGISTRATION_FORM_NAME } from "@/lib/registration-form";
+import { getRegistrationForwardUrl } from "@/lib/registration-forward";
 import { insertRegistration, isSupabaseConfigured } from "@/lib/supabase/server";
 import type { RegistrationPayload } from "@/lib/types";
 
@@ -39,16 +40,43 @@ export async function POST(request: Request) {
   };
 
   if (!isSupabaseConfigured()) {
-    console.error(
-      "[registration] SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are not set — lead not saved."
-    );
-    return NextResponse.json(
-      {
-        error:
-          "Registration is temporarily unavailable. Please try again later or contact us directly.",
-      },
-      { status: 503 }
-    );
+    const forwardUrl = getRegistrationForwardUrl();
+    try {
+      const fwd = await fetch(forwardUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: lead.firstName,
+          lastName: lead.lastName,
+          email: lead.email,
+          phone: lead.phone,
+          model: lead.model,
+          collection: lead.collection,
+          source: lead.source,
+          formName: lead.formName,
+        }),
+      });
+      const data = await fwd.json().catch(() => ({}));
+      if (!fwd.ok) {
+        console.error("[registration] forward failed:", fwd.status, data);
+        return NextResponse.json(
+          { error: data.error ?? "Could not save your registration. Please try again shortly." },
+          { status: fwd.status >= 400 && fwd.status < 600 ? fwd.status : 502 }
+        );
+      }
+      return NextResponse.json({
+        ok: true,
+        message:
+          data.message ??
+          "Registration received. Floor plan PDF and details will be sent to your email.",
+      });
+    } catch (err) {
+      console.error("[registration] forward error:", err);
+      return NextResponse.json(
+        { error: "Registration is temporarily unavailable. Please try again shortly." },
+        { status: 503 }
+      );
+    }
   }
 
   const saved = await insertRegistration({

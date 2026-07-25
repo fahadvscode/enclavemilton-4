@@ -23,7 +23,9 @@ function getSupabaseUrl() {
 }
 
 export function isSupabaseConfigured() {
-  return Boolean(getSupabaseUrl() && process.env.SUPABASE_SERVICE_ROLE_KEY);
+  const url = getSupabaseUrl().trim();
+  const key = (process.env.SUPABASE_SERVICE_ROLE_KEY ?? "").trim();
+  return Boolean(url && key);
 }
 
 export function createSupabaseAdmin(): SupabaseClient | null {
