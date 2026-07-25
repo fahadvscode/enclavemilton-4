@@ -38,27 +38,34 @@ export async function POST(request: Request) {
     formName: formName?.trim() || REGISTRATION_FORM_NAME,
   };
 
-  if (isSupabaseConfigured()) {
-    const saved = await insertRegistration({
-      first_name: lead.firstName,
-      last_name: lead.lastName,
-      email: lead.email,
-      phone: lead.phone,
-      model: lead.model,
-      collection: lead.collection,
-      source: lead.source,
-      form_name: lead.formName,
-    });
+  if (!isSupabaseConfigured()) {
+    console.error(
+      "[registration] SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are not set — lead not saved."
+    );
+    return NextResponse.json(
+      {
+        error:
+          "Registration is temporarily unavailable. Please try again later or contact us directly.",
+      },
+      { status: 503 }
+    );
+  }
 
-    if (!saved.ok) {
-      return NextResponse.json(
-        { error: "Could not save your registration. Please try again shortly." },
-        { status: 500 }
-      );
-    }
-  } else {
-    console.warn(
-      "[registration] SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY not set — lead not persisted to database."
+  const saved = await insertRegistration({
+    first_name: lead.firstName,
+    last_name: lead.lastName,
+    email: lead.email,
+    phone: lead.phone,
+    model: lead.model,
+    collection: lead.collection,
+    source: lead.source,
+    form_name: lead.formName,
+  });
+
+  if (!saved.ok) {
+    return NextResponse.json(
+      { error: "Could not save your registration. Please try again shortly." },
+      { status: 500 }
     );
   }
 
@@ -73,8 +80,6 @@ export async function POST(request: Request) {
     } catch {
       console.error("Webhook delivery failed for lead:", lead.email);
     }
-  } else if (!isSupabaseConfigured()) {
-    console.info("[registration]", JSON.stringify(lead));
   }
 
   return NextResponse.json({
