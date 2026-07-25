@@ -16,10 +16,22 @@
   gap: 0.55rem;
 }
 
+@media (max-width: 768px) {
+  .field input,
+  .field select {
+    font-size: 1rem;
+  }
+
+  .formCompact .field input,
+  .formCompact .field select {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 480px) {
   .row {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.45rem;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 }
 

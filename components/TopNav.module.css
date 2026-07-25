@@ -81,8 +81,12 @@
     display: none;
   }
 
+  .nav {
+    gap: 0.65rem;
+  }
+
   .nav a:not(.cta) {
-    display: none;
+    font-size: 0.8rem;
   }
 }
 
