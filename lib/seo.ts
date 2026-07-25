@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IMAGES } from "./images";
 import { SITE_NAME, SITE_NAME_LONG, SITE_URL } from "./site";
 
-const TITLE_SUFFIX = "The Enclave Milton Townhomes by Sundial Homes";
+const TITLE_SUFFIX = "The Enclave Milton by Sundial Homes";
 
 type PageMeta = {
   path?: string;
@@ -13,8 +13,8 @@ type PageMeta = {
 };
 
 export const PRIMARY_KEYWORDS = [
-  "The Enclave",
   "The Enclave Milton",
+  "The Enclave",
   "The Enclave Milton Townhomes",
   "The Enclave Milton Sundial Homes",
   "Enclave Milton",
@@ -60,6 +60,6 @@ export function buildMetadata({
 }
 
 export const defaultDescription =
-  "The Enclave Milton townhomes by Sundial Homes — freehold homes on Britannia Road between James Snow Parkway and Fourth Line. Explore The Enclave Milton Sundial Homes Village & Park collections. Register for exclusive updates.";
+  "The Enclave Milton by Sundial Homes — freehold townhomes on Britannia Road between James Snow Parkway and Fourth Line. Explore The Enclave Milton Village & Park collections. Register for exclusive updates.";
 
-export const homePageTitle = "The Enclave · The Enclave Milton · Freehold Townhomes";
+export const homePageTitle = "The Enclave Milton | Freehold Townhomes by Sundial Homes";

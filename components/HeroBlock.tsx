@@ -23,8 +23,8 @@ export default function HeroBlock() {
         <div className={styles.copy}>
           <p className={styles.eyebrow}>The Enclave · Milton, Ontario</p>
           <h1 id="hero-heading">
-            The Enclave Milton Townhomes
-            <span className={styles.byline}>by Sundial Homes</span>
+            The Enclave Milton
+            <span className={styles.byline}>Freehold Townhomes by Sundial Homes</span>
           </h1>
           <p className={styles.support}>
             Freehold townhomes on Britannia Road — Village back-to-back and Park traditional

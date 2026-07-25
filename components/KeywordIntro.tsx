@@ -11,13 +11,12 @@ export default function KeywordIntro() {
           <div>
             <p className={styles.kicker}>About The Enclave Milton</p>
             <h2 id="about-enclave-heading">
-              The Enclave, The Enclave Milton Townhomes &amp; Sundial Homes
+              The Enclave Milton by Sundial Homes
             </h2>
             <p className={styles.body}>
-              <strong>The Enclave</strong> is the community name.{" "}
               <strong>The Enclave Milton</strong> is the full local identity — a Sundial Homes
               freehold townhome address on Britannia Road between James Snow Parkway and Fourth
-              Line. Buyers also search <strong>The Enclave Milton Townhomes</strong> and{" "}
+              Line. Buyers also search <strong>The Enclave</strong>, <strong>The Enclave Milton Townhomes</strong> and{" "}
               <strong>The Enclave Milton Sundial Homes</strong> when comparing new homes in
               southeast Milton, Halton Region.
             </p>
