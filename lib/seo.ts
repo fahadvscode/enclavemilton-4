@@ -16,6 +16,8 @@ export const PRIMARY_KEYWORDS = [
   "The Enclave Milton",
   "The Enclave",
   "The Enclave Milton Townhomes",
+  "The Enclave site",
+  "The Enclave Milton site",
   "The Enclave Milton Sundial Homes",
   "Enclave Milton",
   "Enclave Milton townhomes",
