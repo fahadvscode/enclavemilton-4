@@ -10,7 +10,7 @@ export default function HeroBlock() {
       <div className={styles.bg}>
         <Image
           src={IMAGES.hero}
-          alt="The Enclave Milton Townhomes by Sundial Homes — community rendering"
+          alt="The Enclave Milton freehold townhomes by Sundial Homes on Britannia Road, Milton Ontario"
           fill
           priority
           sizes="100vw"
@@ -18,17 +18,20 @@ export default function HeroBlock() {
         />
         <div className={styles.overlay} />
       </div>
-      
+
       <div className={`container ${styles.content}`}>
         <div className={styles.copy}>
-          <p className={styles.eyebrow}>The Enclave · Milton, Ontario</p>
+          <p className={styles.eyebrow}>The Enclave Milton · Now Available · Occupancy 2027</p>
           <h1 id="hero-heading">
             The Enclave Milton
-            <span className={styles.byline}>Freehold Townhomes by Sundial Homes</span>
+            <span className={styles.byline}>
+              Freehold Townhomes by Sundial Homes — from $599,990
+            </span>
           </h1>
           <p className={styles.support}>
-            Freehold townhomes on Britannia Road — Village back-to-back and Park traditional
-            layouts. Register for exclusive updates.
+            The Enclave Milton Townhomes on Britannia Road near James Snow Parkway — Village
+            back-to-back and Park traditional freehold layouts. Register now for the price list and
+            floor plans.
           </p>
           <div className={styles.links}>
             <Link href="/floor-plans" className="btn btn--primary">
@@ -42,7 +45,7 @@ export default function HeroBlock() {
 
         <aside id="register" className={styles.formCard} aria-labelledby="hero-form-title">
           <h2 id="hero-form-title" className={styles.formTitle}>
-            Get floor plans &amp; details
+            Get price list &amp; floor plans
           </h2>
           <LeadForm idPrefix="hero" compact />
         </aside>

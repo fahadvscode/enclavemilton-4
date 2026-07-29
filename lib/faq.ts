@@ -6,17 +6,17 @@ export const PRODUCT_FAQ: FaqItem[] = [
   {
     question: "What is The Enclave?",
     answer:
-      "The Enclave is a new freehold townhome community by Sundial Homes in Milton, Ontario — officially marketed as The Enclave Milton / The Enclave Milton Townhomes — with occupancy planned for 2027.",
+      "The Enclave is a new freehold townhome community by Sundial Homes in Milton, Ontario — officially marketed as The Enclave Milton / The Enclave Milton Townhomes — starting from $599,990 with occupancy planned for 2027.",
   },
   {
     question: "What is The Enclave Milton?",
     answer:
-      "The Enclave Milton is Sundial Homes' freehold townhome address on Britannia Road between James Snow Parkway and Fourth Line in southeast Milton. Buyers also search it as The Enclave Milton Townhomes and The Enclave Milton Sundial Homes.",
+      "The Enclave Milton is Sundial Homes' freehold townhome address on Britannia Road between James Snow Parkway and Fourth Line in southeast Milton. Buyers also search it as The Enclave Milton Townhomes and The Enclave Milton Sundial Homes. Homes are now selling from $599,990.",
   },
   {
     question: "What are The Enclave Milton Townhomes?",
     answer:
-      "The Enclave Milton Townhomes are freehold layouts across two collections: Village (back-to-back models) and Park (traditional 2- and 3-storey models) with no monthly maintenance fees.",
+      "The Enclave Milton Townhomes are freehold layouts across two collections: Village (back-to-back models) and Park (traditional 2- and 3-storey models) with no monthly maintenance fees, marketed from $599,990.",
   },
   {
     question: "Are The Enclave Milton townhomes by Sundial Homes?",
@@ -36,7 +36,7 @@ export const PRODUCT_FAQ: FaqItem[] = [
   {
     question: "What are prices at The Enclave Milton?",
     answer:
-      "Model-specific pricing, elevations, and lot premiums are shared when you register on this site.",
+      "The Enclave Milton Townhomes by Sundial Homes are marketed from $599,990 before upgrades and closing costs. Model-specific pricing, elevations, and lot premiums are shared when you register for the price list and floor plans on this site.",
   },
   {
     question: "Do Enclave townhomes charge monthly maintenance fees?",

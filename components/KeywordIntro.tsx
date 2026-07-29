@@ -9,20 +9,22 @@ export default function KeywordIntro() {
       <div className="container">
         <div className={styles.grid}>
           <div>
-            <p className={styles.kicker}>About The Enclave Milton</p>
+            <p className={styles.kicker}>Welcome to The Enclave Milton</p>
             <h2 id="about-enclave-heading">
-              The Enclave Milton by Sundial Homes
+              The Enclave · The Enclave Milton Townhomes by Sundial Homes
             </h2>
             <p className={styles.body}>
-              <strong>The Enclave Milton</strong> is the full local identity — a Sundial Homes
-              freehold townhome address on Britannia Road between James Snow Parkway and Fourth
-              Line. Buyers also search <strong>The Enclave</strong>, <strong>The Enclave Milton Townhomes</strong> and{" "}
-              <strong>The Enclave Milton Sundial Homes</strong> when comparing new homes in
-              southeast Milton, Halton Region.
+              <strong>The Enclave</strong> is a master-planned freehold townhome community in
+              southeast Milton. Buyers search <strong>The Enclave Milton</strong>,{" "}
+              <strong>The Enclave Milton Townhomes</strong>, and{" "}
+              <strong>The Enclave Milton Sundial Homes</strong> for this Sundial Homes address on
+              Britannia Road between James Snow Parkway and Fourth Line — starting from $599,990 with
+              occupancy anticipated for 2027.
             </p>
             <p className={styles.body}>
-              Two collections share one master plan: Village back-to-back towns and Park traditional
-              two- and three-storey layouts. Register now to receive exclusive updates and floor plans.
+              The Enclave Milton offers two collections in one community: Village back-to-back
+              freehold towns and Park traditional two- and three-storey layouts. Register today for
+              priority access to the price list, floor plans, and upcoming releases.
             </p>
           </div>
           <aside className={styles.aside} aria-label="Quick facts about The Enclave Milton">
@@ -37,8 +39,20 @@ export default function KeywordIntro() {
                 <dd>Freehold townhomes</dd>
               </div>
               <div>
+                <dt>Starting from</dt>
+                <dd>$599,990</dd>
+              </div>
+              <div>
+                <dt>Maintenance</dt>
+                <dd>$0 monthly</dd>
+              </div>
+              <div>
                 <dt>Location</dt>
                 <dd>Britannia Rd, Milton ON</dd>
+              </div>
+              <div>
+                <dt>Occupancy</dt>
+                <dd>2027</dd>
               </div>
             </dl>
           </aside>

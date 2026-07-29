@@ -16,8 +16,6 @@ export const PRIMARY_KEYWORDS = [
   "The Enclave Milton",
   "The Enclave",
   "The Enclave Milton Townhomes",
-  "The Enclave site",
-  "The Enclave Milton site",
   "The Enclave Milton Sundial Homes",
   "Enclave Milton",
   "Enclave Milton townhomes",
@@ -26,6 +24,8 @@ export const PRIMARY_KEYWORDS = [
   "freehold townhomes Milton",
   "Milton townhomes for sale",
   "Britannia Road Milton new homes",
+  "The Enclave Milton from $599,990",
+  "new homes Milton Ontario 2027",
 ] as const;
 
 export function buildMetadata({
@@ -62,6 +62,7 @@ export function buildMetadata({
 }
 
 export const defaultDescription =
-  "The Enclave Milton by Sundial Homes — freehold townhomes on Britannia Road between James Snow Parkway and Fourth Line. Explore The Enclave Milton Village & Park collections. Register for exclusive updates.";
+  "The Enclave Milton by Sundial Homes — freehold townhomes from $599,990 on Britannia Road between James Snow Parkway and Fourth Line. Register now for The Enclave Milton price list, floor plans, and Village & Park collection details. Occupancy 2027.";
 
-export const homePageTitle = "The Enclave Milton | Freehold Townhomes by Sundial Homes";
+export const homePageTitle =
+  "The Enclave Milton | Freehold Townhomes from $599,990 — Register Today";

@@ -10,8 +10,8 @@ export default function FaqSection() {
         </h2>
         <p className="lead">
           Direct answers for buyers researching The Enclave Milton, The Enclave Milton Townhomes,
-          and The Enclave Milton Sundial Homes — details, freehold ownership, and registration in
-          Milton, Ontario.
+          and The Enclave Milton Sundial Homes — pricing from $599,990, freehold ownership, and
+          registration in Milton, Ontario.
         </p>
         <div className={styles.list}>
           {HOME_FAQ.map((item) => (

@@ -25,7 +25,7 @@ export default function TopNav() {
           <Link href="/floor-plans">Floor plans</Link>
           <Link href="/schools-and-area">Schools &amp; area</Link>
           <Link href="/#register" className={styles.cta}>
-            Get details
+            Get price list
           </Link>
         </nav>
       </div>

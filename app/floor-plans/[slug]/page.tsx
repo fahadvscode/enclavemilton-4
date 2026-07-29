@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     path: `/floor-plans/${slug}`,
     pageTitle: `${model.model} — ${sqft}`,
-    description: `${model.model} ${storey} freehold townhome at The Enclave Milton (${collection.name}). ${sqft}. Register for floor plan PDF and details.`,
+    description: `${model.model} ${storey} freehold townhome at The Enclave Milton (${collection.name}). ${sqft}, from $599,990. Register for floor plan PDF and pricing.`,
   });
 }
 

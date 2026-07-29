@@ -25,7 +25,7 @@ export default function ModelCard({ model, collection }: ModelCardProps) {
             View layout
           </Link>
           <a href={`#register-${model.slug}`} className="btn btn--primary">
-            Get details
+            Get pricing
           </a>
         </div>
       </div>

@@ -9,9 +9,9 @@ import { breadcrumbSchema, floorPlansListSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildMetadata({
   path: "/floor-plans",
-  pageTitle: "The Enclave Milton Townhomes Floor Plans",
+  pageTitle: "The Enclave Milton Floor Plans & Pricing from $599,990",
   description:
-    "Browse The Enclave Milton Townhomes floor plans by Sundial Homes — Village back-to-back and Park traditional freehold towns in Milton, Ontario.",
+    "Browse The Enclave Milton Townhomes floor plans by Sundial Homes — Village back-to-back and Park traditional freehold towns from $599,990 with $0 monthly maintenance in Milton, Ontario. Register for the full price list.",
 });
 
 export default function FloorPlansPage() {

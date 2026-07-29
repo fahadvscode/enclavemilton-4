@@ -3,11 +3,11 @@ import styles from "./WhySection.module.css";
 const POINTS = [
   {
     title: "The Enclave Milton freehold advantage",
-    body: "The Enclave Milton Townhomes are marketed as freehold — a direct answer for buyers comparing Enclave Milton vs condo towns in Halton.",
+    body: "Unlike many Milton townhome projects with condo fees, The Enclave Milton Townhomes are marketed as freehold with $0 monthly maintenance — a direct answer for buyers comparing Enclave Milton vs condo towns in Halton.",
   },
   {
-    title: "Sundial Homes layouts",
-    body: "The Enclave Milton Sundial Homes lineup spans multiple models — rare breadth in one southeast Milton address.",
+    title: "From $599,990 by Sundial Homes",
+    body: "The Enclave Milton Sundial Homes lineup spans Village and Park collections with entry marketing from $599,990 and occupancy communicated for 2027.",
   },
   {
     title: "Village & Park townhome collections",
@@ -25,8 +25,8 @@ export default function WhySection() {
       <div className="container">
         <h2 id="why-heading">Why buyers choose The Enclave Milton Townhomes</h2>
         <p className="lead">
-          The Enclave Milton by Sundial Homes pairs freehold ownership, two distinct collections, and
-          a southeast Milton commute story.
+          The Enclave Milton by Sundial Homes pairs freehold ownership from $599,990, two distinct
+          collections, and a southeast Milton commute story — now selling for 2027 occupancy.
         </p>
         <ul className={styles.list}>
           {POINTS.map((p, i) => (
